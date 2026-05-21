@@ -93,6 +93,21 @@ The application automatically seeds initial user accounts via data.sql for testi
 
 ---
 
+## Future Improvements
+
+* **PostgreSQL support** - migrate from H2 to PostgreSQL for production-ready persistence
+* **Role management endpoint** - allow admins to change user roles via the API instead of direct database access
+* **Ticket attachments** - allow users to upload files (screenshots, logs) to tickets
+* **Email notifications** - notify technicians when assigned a ticket, and requesters when their ticket status changes
+* **Pagination** - add pagination to `GET /tickets` for performance at scale
+* **Ticket history/audit log** - track all status changes and assignments with timestamps
+* **Password change endpoint** - allow users to update their own passwords
+* **Refresh tokens** - implement JWT refresh tokens so users don't get logged out every 24 hours
+* **API documentation** - integrate Swagger/OpenAPI for interactive endpoint documentation
+* **Docker support** - add a Dockerfile and docker-compose for easy deployment
+
+---
+
 ## Author
 **Maksym Zhelezniakov** - https://github.com/Max-Engineer
 
